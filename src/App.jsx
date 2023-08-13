@@ -25,8 +25,8 @@ function App() {
          <Route path="/newsletter" element={<Newsletter />} />
          <Route path="/lamps" element={<ProductList products={lamps} type={"Lamps"} />} />
          <Route path="/candles" element={<ProductList products={candles} type={"Candles"} />} />
-         <Route to="/products/:id" element={<Product products={lamps} type="Lamps" />}/>
-         <Route to="/candles/:id" element={<Product products={candles} type="Candles" />} />
+         <Route path="/products/:id" element={<Product products={lamps} type="Lamps" />}/>
+         <Route path="/candles/:id" element={<Product products={candles} type="Candles" />} />
       </Routes>
         </main>
       </div>
