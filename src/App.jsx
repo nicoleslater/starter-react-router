@@ -19,17 +19,13 @@ function App() {
       <div className="wrapper">
         <Nav />
         <main>
-          <Routes> 
+      <Routes> 
          <Route path="/" element={<Home />}/>
          <Route path="/about" element={<About />} />
          <Route path="/newsletter" element={<Newsletter />} />
          <Route path="/lamps" element={<ProductList products={lamps} type={"Lamps"} />} />
          <Route path="/candles" element={<ProductList products={candles} type={"Candles"} />} />
-          <About />
-          <Newsletter />
-          <ProductList products={lamps} type={"Lamps"} />
-  <ProductList products={candles} type={"Candles"} />
-          </Routes>
+      </Routes>
         </main>
       </div>
       <Footer />
