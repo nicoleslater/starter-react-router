@@ -19,11 +19,13 @@ function App() {
       <div className="wrapper">
         <Nav />
         <main>
+          <Routes> 
           <Home />
           <About />
           <Newsletter />
           <ProductList products={lamps} type={"Lamps"} />
           <ProductList products={candles} type={"Candles"} />
+          </Routes>
         </main>
       </div>
       <Footer />
