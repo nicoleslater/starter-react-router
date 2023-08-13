@@ -8,7 +8,7 @@ export default function Footer() {
         <p>I Love Light. All Rights Reserved {year}</p>
         <ul>
           <li>
-          <Link to="/about">About</Link>
+          <Link to="/about"><h3>About</h3></Link>
           </li>
           <li>
           <Link to="/candles"><h3>Candles</h3></Link>
