@@ -6,13 +6,15 @@ import Home from "./components/pages/home.jsx";
 import Newsletter from "./components/pages/newsletter.jsx";
 import ProductList from "./components/products/productList.jsx";
 import Product from "./components/products/product.jsx";
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import lamps from "./data/lamps.json";
 import candles from "./data/candles.json";
 
 function App() {
   return (
+
     <div className="App">
+      <Router> 
       <Header />
       <div className="wrapper">
         <Nav />
@@ -25,6 +27,8 @@ function App() {
         </main>
       </div>
       <Footer />
+      </Router>
+      
     </div>
   );
 }
